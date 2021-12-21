@@ -1,16 +1,84 @@
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-main {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #564D4A;
 }
 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 55vw;
+    border-radius: 25vh;
+    background-color: #26f0f1;
+    margin-bottom: 10vh;
+}
+
+.header-words {
+    font-size: 6vw;
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+.left-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 45vw;
+    background-color: transparent;
+    border-radius: 25vh;
+}
+
+.custom-button {
+    background-color: #26f0f1;
+    font-size: 3vh;
+    border: #26f0f1;
+    border-radius: 25vh;
+}
+.custom-button:hover {
+    cursor: pointer;
+    font-size: 2.5vw;
+}
+
+.right-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 45vw;
+    background-color: transparent;
+}
+
+.prv-wk {
+    font-size: 1.8vw;
+    border-radius: 25vh;
+    width: 45%;
+    background-color: #26f0f1;
+    text-align: center;
+}
+
+.workout-btn {
+    background-color: #26f0f1;
+    font-size: 2vw;
+    border-radius: 25vh;
+    margin-top: 5vh;
+    cursor: pointer;
+}
+.workout-btn:hover {
+    font-size: 3vw;
+}
