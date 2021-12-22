@@ -98,17 +98,36 @@
     z-index: 100;
     left: 50%;
     top: 50%;
-    width: 20vw;
+    width: 15vw;
     height: 10vh;
     overflow: auto;
     background: #f8f7f9;
     transform: translate(-50%);
 }
 
+#custom-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #close {
     color: black;
     float: right;
-    font-size: 100%;
+    font-size: 150%;
     font-weight: bold;
+    border: transparent;
+    cursor: pointer;
+
 }
+#close:hover{
+    color: red;
+}
+
+#custom-input-p {
+    font-size: 100%;
+}
+
+
 

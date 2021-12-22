@@ -14,8 +14,10 @@ window.onclick = function (e){
       modal.style.display = "none";
    }
 }
-function customInputHandler(){
-
+function customInputHandler(e){
+   e.preventDefault()
+   window.open('workout.html', "_self")
 }
+
 customInput.addEventListener('submit', customInputHandler)
 closeBtn.addEventListener('click', closeModal)
