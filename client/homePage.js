@@ -1,21 +1,22 @@
+
 let modal = document.getElementById('create-modal')
 const createBtn = document.getElementById('custom-button')
 const closeBtn = document.getElementById('close')
 let customInput = document.getElementById('custom-input')
 
-createBtn.onclick = function (){
+function customWorkoutFunc(){
    modal.style.display = "block";
 }
+createBtn.addEventListener('click', customWorkoutFunc)
+
 function closeModal(e){
    modal.style.display = "none";
 }
-window.onclick = function (e){
-   if(e.target === modal){
-      modal.style.display = "none";
-   }
-}
+
 function customInputHandler(e){
    e.preventDefault()
+   let userInput = document.getElementById('custom-input-text')
+   window.localStorage.setItem('customInput', userInput.value)
    window.open('workout.html', "_self")
 }
 

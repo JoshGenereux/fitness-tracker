@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="workStyles.css" />
     <title>Live Fitness</title>
 </head>
 <body class="body">
@@ -16,7 +17,7 @@
     </div>
 
     <div class="exercise">
-        <h2 class="exercise-name">exercise</h2>
+        <h2 id="exercise-name">exercise</h2>
         <div class="set">
             <div class="set-set">set:</div>
             <div class="set-weight">weight:</div>
@@ -38,8 +39,54 @@
             <div class="set-rep">reps:</div>
         </div>
     </div>
+    <nav>
+        <div id="exercise-dropdown">
+            <button id="exercise-list-btn">Add New Exercise</button>
+            <ul id="exercise-list">
+                <li id="Iso-Lateral Chest Press">Iso-Lateral Chest Press</li>
+                <li value="Triceps Dip">Triceps Dip</li>
+                <li value="Reverse Fly">Reverse Fly</li>
+                <li value="Chest Fly">Chest Fly</li>
+                <li value="Lateral Raise">Lateral Raise</li>
+                <li value="Leg Press"> Leg Press</li>
+                <li value="Seated Leg Curl">Seated Leg Curl</li>
+                <li value="Seated Calf Raise">Seated Calf Raise</li>
+                <li value="Hanging Leg Raise">Hanging Leg Raise</li>
+                <li value="Leg Press">Leg Press</li>
+                <li value="Squat">Squat</li>
+                <li value="Dead Lift">Dead Lift</li>
+                <li value="Romanian Dead Lift">Romanian Dead Lift</li>
+                <li value="Lat Pulldown">Lat Pulldown</li>
+                <li value="Shrug">Shrug</li>
+                <li value="Bench Press">Bench Press</li>
+                <li value="Iso-Lateral Row">Iso-Lateral Row</li>
+                <li value="Barbell Row">Barbell Row</li>
+                <li value="Dumbbell Row">Dumbbell Row</li>
+                <li value="Bicep Curl">Bicep Curl</li>
+                <li value="Barbell Curl">Barbell Curl</li>
+                <li value="Crunch">Crunch</li>
+                <li value="Sit Up">Sit Up</li>
+                <li value="Burpee">Burpee</li>
+                <li value="Cable Crunch">able Crunch</li>
+                <li value="Glute Raise">Glute Raise</li>
+                <li value="Hip Abductors">Hip Abductors</li>
+                <li value="Calf Raise">Calf Raise</li>
+                <li value="Chest Dip">Chest Dip</li>
+                <li value="Chin Up">Chin Up</li>
+                <li value="Elipticle">Elipticle</li>
+                <li value="Row Machine">Row Machine</li>
+                <li value="TreadMill">TreadMill</li>
+                <li value="Front Raise">Front Raise</li>
+                <li value="Hack Squat">Hack Squat</li>
+                <li value="Hammer Curl">Hammer Curl</li>
+                <li value="Hip Thrust">Hip Thrust</li>
+                <li value="Incline Chest Press">Incline Chest Press</li>
+                <li value="Muscle Up">Muscle Up</li>
+                <li value="Pull UP">Pull UP</li>
+            </ul>
+        </div>
+    </nav>
 
-    <script src="app.js" rel="script"></script>
-    <link rel="stylesheet" href="workStyles.css" />
+    <script src="exercise.js" rel="script"></script>
 </body>
 </html>
