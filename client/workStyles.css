@@ -51,7 +51,7 @@
     color: #f8f7f9;
 }
 
-.set {
+#set {
     text-align: center;
     width: 75%;
     height: 20%;
@@ -62,7 +62,7 @@
     margin-bottom: 1%;
 }
 
-.set-rep, .set-weight, .set-set {
+#set-rep, #set-weight, #set-set {
     font-size: 1.5vw;
     color: #f8f7f9;
 }
