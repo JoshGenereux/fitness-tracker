@@ -1,7 +1,7 @@
 const exerciseList = document.getElementById('exercise-list')
 const exerciseListBtn = document.getElementById('exercise-list-btn')
 const exerciseValue = document.getElementById('exercise-list')
-const addSet = document.getElementById('add-set')
+const addSet = document.getElementById('add-set-btn')
 
 addWorkoutName()
 function addWorkoutName(){
@@ -9,7 +9,12 @@ function addWorkoutName(){
 }
 
 function toggleExerciseList(){
-    exerciseList.style.display = "block"
+    if(exerciseList.style.display === 'none'){
+        exerciseList.style.display = "block"
+    } else {
+        exerciseList.style.display = 'none'
+    }
+
 }
 exerciseListBtn.addEventListener('click', toggleExerciseList)
 
@@ -18,33 +23,34 @@ window.onclick = function (event){
         exerciseList.style.display = "none"
     }
 }
-
+let setNum = 1;
 function addExercise(e){
-    let setNum = 1;
     document.getElementById('add-exercise-block').innerHTML =
         '<div class="exercise">\n' +
         '        <h2 id="exercise-name"></h2>\n' +
-        '        <div id="set">\n' +
-        '            <div id="set-set">set: <p id="set-count"></p></div>\n' +
-        '            <div id="set-weight">weight: <p id="set-weight-num"></p></div>\n' +
-        '            <div id="set-rep">reps: <p id="set-rep-num"></p></div>\n' +
-        '        </div>\n' +
-        '        <button id="add-set" onclick="addSetHandler()">Add Set</button>\n ' +
+        '        <div id="add-set"></div>\n' +
+        '        <button id="add-set-btn" onclick="addSetHandler()">Add Set</button>\n ' +
         '</div>'
     document.getElementById('exercise-name').innerHTML = e.target.id
-
 }
 exerciseValue.addEventListener('click',addExercise)
 
 function addSetHandler(){
-    document.getElementById('add-exercise-block').innerHTML =
-            '<div id="set">\n' +
-            ' <div id="set-set">set: <p id="set-count"></p></div>\n' +
-            ' <div id="set-weight">weight: <p id="set-weight-num"></p></div>\n' +
-            ' <div id="set-rep">reps: <p id="set-rep-num"></p></div>\n' +
-            ' </div>'
+    document.getElementById('add-set').insertAdjacentHTML("beforeend",
+        '<div id="add-set-set">\n' +
+        '            <div id="set-set">\n' +
+        '               <div>set:</div>\n' +
+        '               <p id="set-set-count">'+setNum+'</p>\n'+
+        '            </div>\n' +
+        '            <div id="set-weight">\n' +
+        '               <div>weight:</div>\n' +
+        '               <input id="set-weight-num" type="number"/>\n'+
+        '            </div>\n'+
+        '            <div id="set-rep">\n' +
+        '               <div>reps:</div>\n' +
+        '               <input id="set-rep-num" type="number"/>\n'+
+        '            </div>\n'+
+        ' </div>')
+    setNum++;
 }
 
-function addSetNum (){
-    const setDivOne = document.createElement('div').id = 'exercise'
-}
