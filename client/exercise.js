@@ -2,6 +2,7 @@ const exerciseList = document.getElementById('exercise-list')
 const exerciseListBtn = document.getElementById('exercise-list-btn')
 const exerciseValue = document.getElementById('exercise-list')
 const addSet = document.getElementById('add-set-btn')
+const exercise = document.getElementById('add-exercise-block')
 
 addWorkoutName()
 function addWorkoutName(){
@@ -32,8 +33,9 @@ function addExercise(e){
         '        <button id="add-set-btn" onclick="addSetHandler()">Add Set</button>\n ' +
         '</div>'
     document.getElementById('exercise-name').innerHTML = e.target.id
+
 }
-exerciseValue.addEventListener('click',addExercise)
+exerciseValue.addEventListener('click', addExercise)
 
 function addSetHandler(){
     document.getElementById('add-set').insertAdjacentHTML("beforeend",
@@ -53,4 +55,6 @@ function addSetHandler(){
         ' </div>')
     setNum++;
 }
+
+
 

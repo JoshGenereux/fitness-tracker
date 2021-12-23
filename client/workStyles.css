@@ -51,7 +51,7 @@
     padding-bottom: 5vh;
 }
 
-#exercise-name {
+#exercise-name, #add-exercise-name {
     font-size: 2.5vw;
     color: #a0dafc;
 }
@@ -67,7 +67,7 @@
     margin-bottom: 1%;
 }
 
-#add-set {
+#add-set, #add-set-2 {
     text-align: center;
     width: 60%;
     height: 20%;
@@ -149,7 +149,7 @@
     font-family: sans-serif;
 }
 
-#add-set-btn {
+#add-set-btn, #add-set-btn-2 {
     background: none;
     font-family: sans-serif;
     font-size: 1.5vw;
