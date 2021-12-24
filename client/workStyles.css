@@ -67,9 +67,9 @@
     margin-bottom: 1%;
 }
 
-#add-set, #add-set-2 {
+#add-set{
     text-align: center;
-    width: 60%;
+    width: 80%;
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,16 @@
     color: #f8f7f9;
     display: flex;
     flex-direction: row;
+}
 
+#delete-set {
+    color: red;
+    background: none;
+    border: none;
+    font-size: 1.5vh;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 #exercise-dropdown{
@@ -141,7 +150,7 @@
 
 #set-weight-num, #set-rep-num {
     margin-left: 1vw;
-    width: 3vw;
+    width: 4vw;
     background-color: transparent;
     color: #2DFC2DFF;
     font-size: 1.5vw;
@@ -156,4 +165,59 @@
     color: #2DFC2DFF;
     cursor: pointer;
     border: none
+}
+
+#finish {
+    font-family: sans-serif;
+    font-size: 5vh;
+    color: #a0dafc;
+    position: relative;
+    left: 42vw;
+    top: 2vh;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#create-modal {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    left: 53%;
+    top: 40%;
+    width: 30vw;
+    height: 20vh;
+    overflow: auto;
+    background: #6f6c6c;
+    border: none;
+    border-radius: 5vh;
+    transform: translate(-50%);
+}
+
+#modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 11%;
+}
+
+#cancel-btn {
+    background: none;
+    border: none;
+    font-size: 5vh;
+    color: #f85050;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#save-workout {
+    background: none;
+    border: none;
+    font-size: 5vh;
+    color: #2DFC2DFF;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }
