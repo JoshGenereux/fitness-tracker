@@ -4,6 +4,8 @@ const exerciseValue = document.getElementById('exercise-list')
 const deleteBtn = document.getElementById('delete-set')
 const finishBtn = document.getElementById('finish')
 const modal = document.getElementById('create-modal')
+const cancelBtn = document.getElementById('cancel-btn')
+const saveBtn = document.getElementById('save-workout')
 exerciseValue.addEventListener('click', addExercise)
 
 addWorkoutName()
@@ -82,8 +84,15 @@ function deleteSet(){
 }
 
 
-function finishWorkout(e){
-    e.preventDefault()
+finishBtn.addEventListener('click', ()=>{
     modal.style.display = 'block'
-}
-finishBtn.addEventListener('click', finishWorkout)
+})
+
+cancelBtn.addEventListener('click', ()=>{
+    modal.style.display = "none"
+})
+
+// saveBtn.addEventListener('click', ()=>{
+//     axios
+//         .post(/)
+// })
