@@ -51,7 +51,7 @@
     padding-bottom: 5vh;
 }
 
-#exercise-name, #add-exercise-name {
+#exercise-name, #add-exercise-name, #another-name {
     font-size: 2.5vw;
     color: #a0dafc;
 }
