@@ -4,7 +4,9 @@ const app = express();
 app.use(express.json())
 app.use(cors())
 const ctrl = require('./controller.js')
+const {SERVER_PORT} = process.env
 
 
+app.post('/live-fitness', ctrl.testRun)
 
-app.listen(8000, ()=> console.log(`Running on port 8000`))
+app.listen(SERVER_PORT, ()=> console.log(`Running on port ${SERVER_PORT}`))
