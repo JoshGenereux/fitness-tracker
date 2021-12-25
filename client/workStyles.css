@@ -28,8 +28,9 @@
 
 #workout-name {
     text-transform: uppercase;
-    font-size: 15vh;
+    font-size: 20vh;
     color: #f8f7f9;
+    font-family: Verdana, sans-serif;
 }
 
 .time {
@@ -42,23 +43,29 @@
 }
 
 .exercise {
+    margin: 2vh;
     height: auto;
-    width: 60vw;
+    width: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5vh;
+    background: rgba(98, 97, 140, 0.8);
+    border-radius: 5vh;
+    border: solid #77777c .5vh;
 }
 
 #exercise-name, #add-exercise-name, #another-name {
-    font-size: 2.5vw;
+    font-size: 5vh;
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
     color: #a0dafc;
+    text-align: center;
 }
 
 #add-set-set {
     text-align: center;
-    width: 60%;
+    width: 75%;
     height: 20%;
     display: flex;
     flex-direction: row;
@@ -158,11 +165,11 @@
     font-family: sans-serif;
 }
 
-#add-set-btn, #add-set-btn-2 {
+#add-set-btn {
     background: none;
     font-family: sans-serif;
     font-size: 1.5vw;
-    color: #2DFC2DFF;
+    color: #A0DAFCFF;
     cursor: pointer;
     border: none
 }
