@@ -2,7 +2,7 @@ const exerciseList = document.getElementById('exercise-list')
 const exerciseListBtn = document.getElementById('exercise-list-btn')
 const exerciseValue = document.getElementById('exercise-list')
 const finishBtn = document.getElementById('finish')
-const modal = document.getElementById('create-modal')
+const modal = document.getElementById('modal-overlay')
 const cancelBtn = document.getElementById('cancel-btn')
 const saveBtn = document.getElementById('save-workout')
 exerciseValue.addEventListener('click', addExercise)
@@ -23,12 +23,6 @@ function toggleExerciseList(){
     }
 }
 
-window.onclick = function (event){
-    if(event.target === document.body){
-        exerciseList.style.display = "none"
-        modal.style.display = "none"
-    }
-}
 let setNum = 1;
 function addExercise(e){
     document.getElementById('add-exercise-block').insertAdjacentHTML("afterend",

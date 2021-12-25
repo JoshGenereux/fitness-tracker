@@ -187,15 +187,13 @@
 }
 
 #create-modal {
-    display: none;
-    position: absolute;
-    z-index: 100;
+    position: sticky;
     left: 50%;
     top: 35%;
-    width: 30vw;
-    height: 20vh;
+    width: 40vw;
+    height: 25vh;
     overflow: auto;
-    background: #6f6c6c;
+    background: none;
     border: none;
     border-radius: 5vh;
     transform: translate(-50%);
@@ -227,4 +225,15 @@
     font-family: sans-serif;
     font-weight: bold;
     cursor: pointer;
+}
+
+#modal-overlay {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: .8;
+    background-color: black;
+    position: fixed;
+    display: none;
 }
