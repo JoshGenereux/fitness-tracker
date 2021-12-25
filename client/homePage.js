@@ -9,7 +9,7 @@ function customWorkoutFunc(){
 }
 createBtn.addEventListener('click', customWorkoutFunc)
 
-function closeModal(e){
+function closeModal(){
    modal.style.display = "none";
 }
 

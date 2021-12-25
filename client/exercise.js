@@ -6,6 +6,7 @@ const finishBtn = document.getElementById('finish')
 const modal = document.getElementById('create-modal')
 const cancelBtn = document.getElementById('cancel-btn')
 const saveBtn = document.getElementById('save-workout')
+const saveWeight = document.getElementById('set-weight-num')
 exerciseValue.addEventListener('click', addExercise)
 
 addWorkoutName()
@@ -36,6 +37,7 @@ window.onclick = function (event){
 
 
 let setNum = 1;
+let count = 0;
 
 function addExercise(e){
     document.getElementById('add-exercise-block').insertAdjacentHTML("afterend",
@@ -76,6 +78,7 @@ function addSetHandler(){
         ' </div>')
     setNum++;
     document.getElementById('delete-set').addEventListener('click', deleteSet)
+
 }
 
 
@@ -91,6 +94,15 @@ finishBtn.addEventListener('click', ()=>{
 cancelBtn.addEventListener('click', ()=>{
     modal.style.display = "none"
 })
+
+function saveInfo(){
+    let test = document.getElementById('set-weight-num')
+    if(test.innerHTML !== null){
+        window.localStorage.setItem('set number', test.value)
+    }
+    console.log("save wweigth")
+}
+saveWeight.addEventListener('input', saveInfo)
 
 // saveBtn.addEventListener('click', ()=>{
 //     axios
